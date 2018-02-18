@@ -1,0 +1,88 @@
+@import "fonts";
+@import "mixins";
+@import "vars";
+@import "normalize";
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: #283645;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  min-height: 100px;
+  /*background-color: red;*/
+  @include mq($tablet) {
+    width: 620px;
+  }
+  @include mq($mobile) {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.pageHeader {
+  min-height: 854px;
+  background: url("../img/iphone-6.png") no-repeat bottom center,
+  url(../img/back-desktop.jpg) no-repeat top center;
+  @include mq($tablet) {
+    min-height: 729px;
+    background-size: 800px, auto;
+  }
+  @include mq($mobile) {
+    min-height: 466px;
+    background-position: 70% 130px, center;
+    background-size: 600px, auto;
+  }
+
+}
+
+.maiNav {
+  /*min-height: 110px;*/
+  background-color: rgba(0, 0, 0, 0.3);
+  /*max-width: 624px;*/
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+.pageLogo {
+  max-width: 147px;
+}
+
+.maiNav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 624px;
+  margin: 0;
+  padding: 0;
+  @include mq($tablet) {
+    display: none;
+  }
+}
+
+.maiNav__item {
+  flex-grow: 1;
+  text-align: center;
+  & a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 46px 10px;
+  }
+}
