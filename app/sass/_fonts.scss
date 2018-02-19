@@ -1,20 +1,13 @@
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "SourceSansPro", sans-serif;
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: "SourceSansPro", sans-serif;
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
   font-style: normal;
 }

@@ -4,10 +4,10 @@
 @import "normalize";
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-family: $default-font;
+  font-size: 14px;
   box-sizing: border-box;
-  background-color: #283645;
+  background-color: $defColor;
 }
 
 img {
@@ -16,12 +16,12 @@ img {
 }
 
 .container {
-  width: 940px;
+  width: 1198px;
   margin: 0 auto;
   min-height: 100px;
-  /*background-color: red;*/
+  background-color: red;
   @include mq($tablet) {
-    width: 620px;
+    width: 750px;
   }
   @include mq($mobile) {
     width: 100%;
@@ -30,59 +30,52 @@ img {
 }
 
 .pageHeader {
-  min-height: 854px;
-  background: url("../img/iphone-6.png") no-repeat bottom center,
-  url(../img/back-desktop.jpg) no-repeat top center;
+  background: $defColor url("../img/back-desktop.jpg") no-repeat top;
+  background-size: 100%;
+  min-height: 770px;
+  padding-top: 42px;
+  flex-grow: 1;
   @include mq($tablet) {
-    min-height: 729px;
-    background-size: 800px, auto;
-  }
-  @include mq($mobile) {
-    min-height: 466px;
-    background-position: 70% 130px, center;
-    background-size: 600px, auto;
-  }
-
-}
-
-.maiNav {
-  /*min-height: 110px;*/
-  background-color: rgba(0, 0, 0, 0.3);
-  /*max-width: 624px;*/
-  & .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-size: 100vw;
   }
 }
 
-
-
-.pageLogo {
-  max-width: 147px;
-}
-
-.maiNav__list {
-  list-style: none;
+.mainNav {
   display: flex;
-  justify-content: space-between;
-  min-width: 624px;
+  width: 768px;
+  margin: 0 auto;
+  border: 2px solid rgba(225, 225, 225, 0.6);
+  align-items: center;
+}
+
+.mainNav__logo {
+  margin-left: 10px;
+}
+
+.mainNav__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  @include mq($tablet) {
-    display: none;
-  }
+  list-style: none;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
-.maiNav__item {
+.mainNav__item {
+  display: block;
   flex-grow: 1;
   text-align: center;
-  & a {
-    color: #ffffff;
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 18px;
-    padding: 46px 10px;
-  }
 }
+
+.mainNav__item a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 22px;
+  
+
+}
+
