@@ -21,11 +21,11 @@ img {
   min-height: 100px;
   background-color: red;
   @include mq($tablet) {
-    width: 750px;
+    width: 94%;
+    margin: 0 auto;
   }
   @include mq($mobile) {
-    width: 100%;
-    padding: 0 20px;
+    width: 100%;e
   }
 }
 
