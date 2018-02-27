@@ -19,7 +19,7 @@ img {
   width: 1198px;
   margin: 0 auto;
   min-height: 100px;
-  /*background-color: red;*/
+  background-color: #ffffff;
   @include mq($tablet) {
     width: 100%;
     margin: 0 auto;
@@ -31,15 +31,16 @@ img {
 
 .pageHeader {
   background: $defColor url("../img/back-desktop.jpg") no-repeat top;
-  background-size: 100%;
+  background-size: auto 100%;
   min-height: 770px;
   padding-top: 42px;
   flex-grow: 1;
   @include mq($tablet) {
-    background-size: 100vw;
+    background-size: auto 100%;
+    min-height: 640px;
   }
   @include mq($mobile) {
-    background-size: 85vh;
+    background-size: auto 100%;
   }
 }
 
@@ -153,6 +154,18 @@ img {
       display: none;
     }
   }
+}
+
+.progress {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 830px;
+  min-height: 325px;
+  padding: 92px 0;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
 
