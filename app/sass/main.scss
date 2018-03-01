@@ -247,6 +247,7 @@ img {
   flex-grow: 0;
   @include mq($mobile) {
     width: 90%;
+    max-width: 350px;
     flex-direction: row;
     margin: 20px auto;
     justify-content: space-between;
